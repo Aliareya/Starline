@@ -2,6 +2,7 @@ import React from 'react'
 import SplitText from '../ui/text/SplitText';
 import CircularText from '../ui/text/CircularText';
 import bg from "../../assets/images/car/c8.jpg";
+import SearchBox from '../shared/SearchBox';
 
 function HomeBanner() {
     const handleAnimationComplete = () => {
@@ -9,7 +10,7 @@ function HomeBanner() {
   };
   return (
     <div
-      className="w-full h-[670px] bg-top bg-cover"
+      className="w-full h-[670px] flex flex-col justify-center items-center bg-top bg-cover"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="w-full h-[670px] gradient-light flex gap-6 pt-40 px-20">
@@ -45,7 +46,11 @@ function HomeBanner() {
             className="absolute bottom-0"
          />
         </div>
+        <div className='w-full  absolute -bottom-5 '>
+          <SearchBox/>
+        </div>
       </div>
+
     </div>
   );
 }
