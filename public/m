@@ -1,0 +1,62 @@
+src/
+├─ pages/ # Main pages
+│ ├─ Home/
+│ │ ├─ Home.jsx # Main Home page component
+│ │ ├─ Home.css # Page-specific styles
+│ │ └─ components/ # Components used only in Home
+│ │ ├─ Banner.jsx
+│ │ └─ FeaturedProducts.jsx
+│ ├─ Dashboard/
+│ │ ├─ Dashboard.jsx
+│ │ ├─ Dashboard.css
+│ │ └─ components/
+│ │ ├─ TicketCard.jsx
+│ │ ├─ UserStats.jsx
+│ │ └─ Cart.jsx # Dashboard-specific cart component
+│ ├─ About/
+│ │ ├─ About.jsx
+│ │ └─ components/
+│ │ └─ TeamCard.jsx
+│ └─ Contact/
+│ ├─ Contact.jsx
+│ └─ components/
+│ └─ ContactForm.jsx
+├─ layouts/ # Layout templates for pages
+│ ├─ MainLayout.jsx
+│ └─ DashboardLayout.jsx
+├─ components/ # Shared & reusable components
+│ ├─ Shared/
+│ │ ├─ Header.jsx
+│ │ ├─ Footer.jsx
+│ │ └─ Navbar.jsx
+│ ├─ Ui/
+│ │ ├─ Button.jsx
+│ │ ├─ Input.jsx
+│ │ ├─ Modal.jsx
+│ │ └─ Card.jsx
+│ └─ Model/
+│ ├─ TicketModel.jsx
+│ └─ UserModel.jsx
+├─ hooks/ # Custom React hooks
+│ ├─ useFetch.js
+│ └─ useAuth.js
+├─ context/ # React Context for global state
+│ └─ AuthContext.jsx
+├─ services/ # API calls & business logic
+│ ├─ ticketService.js
+│ └─ userService.js
+├─ store/ # Redux / Zustand / Recoil store
+│ ├─ store.js
+│ └─ slices/
+│ ├─ authSlice.js
+│ └─ ticketSlice.js
+├─ styles/ # Global CSS and Tailwind setup
+│ ├─ tailwind.css
+│ ├─ index.css
+│ └─ modules/
+├─ utils/ # Helper functions, validators, constants
+│ ├─ helpers.js
+│ ├─ validators.js
+│ └─ constants.js
+├─ App.jsx
+└─ main.jsx

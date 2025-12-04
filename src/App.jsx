@@ -1,11 +1,12 @@
-import React from 'react'
+import { SiteContextProvider } from "./context/SiteContext";
+import MainLayout from "./layouts/MainLayout";
 
 function App() {
   return (
-    <div className='text-red-500'>
-      App
-    </div>
-  )
+    <SiteContextProvider>
+      <MainLayout />
+    </SiteContextProvider>
+  );
 }
 
-export default App
+export default App;
