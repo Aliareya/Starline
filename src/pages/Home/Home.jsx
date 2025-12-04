@@ -1,5 +1,3 @@
-import React from "react";
-import bg from "../../assets/images/car/c8.jpg";
 import HomeBanner from "../../components/banner/HomeBanner";
 
 function Home() {
@@ -9,6 +7,7 @@ function Home() {
   return (
     <div>
       <HomeBanner/>
+      <div className="w-full h-[700px] bg-white"></div>
     </div>
   );
 }
