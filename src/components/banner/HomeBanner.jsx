@@ -18,13 +18,13 @@ function HomeBanner() {
           <h1 className="xl:text-[70px] lg:text-[50px] text-3xl  text-white font-semibold font-[sans-serif] text-gradient">
             Travel in Comfort,
           </h1>
-          <div className="flex items-center mb-10">
-            <span className="xl:text-[70px] lg:text-[40px] text-3xl pt-3 text-[#4bbebe] font-semibold font-[sans-serif] pr-3">
+          <div className="flex mt-5 mb-10">
+            <span className="xl:text-[70px] lg:text-[40px] text-3xl  text-[#4bbebe] font-semibold font-[sans-serif] pr-3">
               Arrive with
             </span>
             <SplitText
               text="  Star Line"
-              className="xl:text-[70px] lg:text-[40px] text-3xl text-[#ffffff] font-semibold "
+              className="xl:text-[50px] lg:text-[50px] text-3xl text-[#ffffff] font-semibold "
               rootMargin=""
               textAlign="center"
               onLetterAnimationComplete={handleAnimationComplete}
@@ -46,9 +46,9 @@ function HomeBanner() {
             className="absolute bottom-0"
          />
         </div>
-        <div className='w-2/3 lg:w-[95%] pl-20 lg:pl-10 lg:pt-24  absolute -bottom-5 lg:-bottom-16 '>
+        {/* <div className='w-2/3 lg:w-[95%] pl-20 lg:pl-10 lg:pt-24  absolute -bottom-5 lg:-bottom-16 '>
           <SearchBox/>
-        </div>
+        </div> */}
       </div>
 
     </div>
