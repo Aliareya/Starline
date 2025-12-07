@@ -14,7 +14,7 @@ function MobailHeader() {
   return (
     <>
       <div className="w-full h-20 flex justify-between">
-        <div className="w-1/5 max-sm:w-1/4 h-20">
+        <div className="w-1/5 max-sm:w-4/12 h-20">
           <img
             src={logo}
             className="w-32 h-20 cursor-pointer "
