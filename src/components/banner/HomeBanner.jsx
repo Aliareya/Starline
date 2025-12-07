@@ -10,29 +10,29 @@ function HomeBanner() {
   };
   return (
     <div
-      className="w-full h-[670px] flex flex-col justify-center items-center bg-top bg-cover"
+      className="w-full xl:h-[670px] lg:h-[600px]  flex flex-col justify-center items-center bg-top bg-cover"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="w-full h-[670px] gradient-light flex pt-32">
-        <div className="w-1/2  flex flex-col  pl-20">
-          <h1 className="text-[70px] text-white font-semibold font-[sans-serif] text-gradient">
+      <div className="w-full h-[670px] gradient-light flex pt-10 lg:pt-16 xl:pt-32">
+        <div className="w-1/2  flex flex-col pl-20 lg:pl-12">
+          <h1 className="xl:text-[70px] lg:text-[50px] text-3xl  text-white font-semibold font-[sans-serif] text-gradient">
             Travel in Comfort,
           </h1>
           <div className="flex items-center mb-10">
-            <span className="text-[50px] text-[#4bbebe] font-semibold font-[sans-serif] pr-3">
+            <span className="xl:text-[70px] lg:text-[40px] text-3xl pt-3 text-[#4bbebe] font-semibold font-[sans-serif] pr-3">
               Arrive with
             </span>
             <SplitText
               text="  Star Line"
-              className="text-[50px] text-[#ffffff] font-semibold "
+              className="xl:text-[70px] lg:text-[40px] text-3xl text-[#ffffff] font-semibold "
               rootMargin=""
               textAlign="center"
               onLetterAnimationComplete={handleAnimationComplete}
             />
           </div>
-          <p className="text-lg text-white/90 font-medium font-[sans-serif]">
-            Affordable prices meet premium comfort. Our easy-to-use system helps
-            you<br></br>
+          <p className="xl:text-lg lg:text-sm text-sm text-white/90 font-medium font-[sans-serif]">
+            Affordable prices meet premium comfort. Our easy-to-use system helps<br></br>
+            you
             discover the best deals on every route,making every trip
             budget-friendly<br></br>
             without losing quality or convenience. <br></br>
@@ -46,12 +46,13 @@ function HomeBanner() {
             className="absolute bottom-0"
          />
         </div>
-        <div className='w-2/3 pl-20  absolute -bottom-5 '>
+        <div className='w-2/3 lg:w-[95%] pl-20 lg:pl-10 lg:pt-24  absolute -bottom-5 lg:-bottom-16 '>
           <SearchBox/>
         </div>
       </div>
 
     </div>
+    
   );
 }
 
