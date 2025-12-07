@@ -6,14 +6,14 @@
 
 @layer utilities {
   .btn-gradient {
-    @apply bg-gradient-to-tr from-[rgb(5,102,102)] to-[rgb(13,165,165)];
+    @apply bg-gradient-to-tr from-[rgb(5,102,102)] to-[rgb(16,125,125)];
   }
 }
 
 @layer utilities {
   .gradient-light {
     @apply bg-gradient-to-r;
-    background-image: linear-gradient(to right, rgba(5, 102, 102, 0.548), rgba(255, 255, 255, 0.215));
+    background-image: linear-gradient(to right, rgba(5, 102, 102, 0.699), rgba(255, 255, 255, 0.215));
   }
 }
 

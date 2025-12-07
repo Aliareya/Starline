@@ -11,9 +11,9 @@ function MainLayout() {
         <Header/>
       </div>
 
-      {/* <div className='pt-20'> 
+      <div className='pt-20'> 
         <AppRoutes/>
-       </div> */}
+       </div>
 
       <div className='w-full px-16'>
         <Footer/>
