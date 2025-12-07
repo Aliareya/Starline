@@ -14,11 +14,11 @@ function HomeBanner() {
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="w-full h-fit gradient-light flex ">
-        <div className="w-full flex flex-col item-start pt-20 px-10">
-          <span className="text-6xl  font-[sans-serif] font-semibold  text-white orange">
+        <div className="w-full flex flex-col item-start pt-20 max-sm:pt-10 px-10 max-sm:px-3">
+          <span className="text-6xl max-sm:text-5xl max-sm:text-white  font-[sans-serif] font-semibold  text-white orange">
             Comfort at every step.
           </span>
-          <span className="text-4xl pt-4  font-[sans-serif] font-bold text-[#045353]">
+          <span className="text-4xl max-sm:text-3xl pt-4  font-[sans-serif] font-bold text-[#045353]">
             Arrive feeling renewed with
           </span>
           <span className="text-4xl pt-4  font-[sans-serif] font-bold orange">
@@ -34,8 +34,8 @@ function HomeBanner() {
             budget-friendly<br></br>
             without losing quality or convenience. <br></br>
           </span>
-          <div className="w-full flex justify-center mt-16 mb-10">
-            <SearchBox  />
+          <div className="w-full flex justify-center mt-16 mb-10 max-sm:mt-10">
+            <SearchBox myclass={"max-md:w-full"} />
           </div>
         </div>
       </div>

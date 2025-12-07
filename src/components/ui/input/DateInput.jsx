@@ -135,7 +135,7 @@ export default function DateInput({
       {open && (
         <div
           ref={calendarRef}
-          className={`absolute z-50 w-[350px] rounded-2xl shadow-md border border-gray-200 p-6 bg-[#e2ecec] z-10`}
+          className={`absolute z-50 w-[350px] max-sm:w-[315px]  rounded-2xl shadow-md border border-gray-200 p-6 bg-[#e2ecec]`}
           style={{
             top: popupTop ? "auto" : "100%",
             bottom: popupTop ? "100%" : "auto",

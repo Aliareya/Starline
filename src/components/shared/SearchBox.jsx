@@ -4,7 +4,7 @@ import DateInput from "../ui/input/DateInput";
 import Button from "../ui/botton/Button";
 import { useForm } from "react-hook-form";
 
-function SearchBox() {
+function SearchBox({myclass=null}) {
   const {register , handleSubmit} =useForm();
   const [date , setDate] = useState({
    "day":null,
@@ -22,8 +22,8 @@ function SearchBox() {
   }
 
   return (
-    <form onSubmit={handleSubmit(searchbuss)} className=" py-7 px-5 flex gap-5 justify-between items-center  rounded-lg border border-[#065656ca] bg-white">
-      <div className="w-1/4">
+    <form onSubmit={handleSubmit(searchbuss)} className={` py-7 max-sm:py-5 px-5 max-sm:px-3 flex max-sm:flex-col gap-5 justify-between items-center  rounded-lg border border-[#065656ca] bg-white ${myclass}`}>
+      <div className="w-1/4 max-sm:w-full">
         <Input
           icon={"basil:location-outline"}
           register={register("from" , {required:"This Feild is requird."})}
@@ -31,7 +31,7 @@ function SearchBox() {
           inputclass={"placeholder:font-semibold placeholder:text-black"}
         />
       </div>
-      <div className="w-1/4">
+      <div className="w-1/4 max-sm:w-full">
         <Input
           icon={"basil:location-outline"}
           register={register("to", {required:"This Feild is requird."})}
@@ -39,10 +39,10 @@ function SearchBox() {
           inputclass={"placeholder:font-semibold placeholder:text-black"}
         />
       </div>
-      <div className="w-1/4">
+      <div className="w-1/4 max-sm:w-full">
         <DateInput setDate={setDate} required={true} register={register("date" , {required : ""})}/>
       </div>
-      <div className="w-1/4">
+      <div className="w-1/4 max-sm:w-full">
         <Button
           label={"Search Buses"}
           color={"g"}

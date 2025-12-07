@@ -30,8 +30,8 @@ function MobailHeader() {
 
       {/* ALWAYS rendered so animation can run */}
       <div
-        className={`w-full px-2 absolute left-0 z-50 top-20 h-auto bg-slate-100 shadow-md pb-5 pt-1 rounded-md 
-          ${open ? "menu-open" : "menu-close"}`}
+        className={`${open ? "" : "hidden"} w-full px-2 absolute left-0 z-50 top-20 h-auto bg-slate-100 shadow-md pb-5 pt-1 rounded-b-md 
+          ${open ? "menu-open " : "menu-close "}`}
       >
         <MenuList clasname="pl-3 py-1 !font-normal" />
         <div className="w-full h-20 pt-1 px-2">
