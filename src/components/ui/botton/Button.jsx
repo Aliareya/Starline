@@ -7,7 +7,7 @@ function Button({ label, click = null, color = null , icon=null , customClass=nu
     type={type}
       onClick={click}
       className={`flex gap-2 items-center justify-center
-        px-5 py-1.5 text-[17px] rounded-md font-semibold text-white
+        px-5 py-1 text-sm rounded-md font-semibold text-white
         ${color === "o" ? "bg-[#f99e1f] hover:bg-[#d48413] " 
           : color === "g" ? "btn-gradient" 
           : "!text-black"}

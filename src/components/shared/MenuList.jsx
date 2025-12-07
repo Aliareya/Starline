@@ -7,7 +7,7 @@ function MenuList({clasname =null}) {
     <>
     {menu.map((item , index)=>{
       return (
-         <li key={`_${index}`} className={`list-none font-semibold cursor-pointer ${clasname}`}>{item}</li>
+         <li key={`_${index}`} className={`hover:font-semibold hover:text-[#053a3a] text-base list-none font-normal cursor-pointer ${clasname}`}>{item}</li>
       )
     })}
     </>

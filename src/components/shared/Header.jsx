@@ -32,12 +32,12 @@ function Header() {
         </div>
 
         <div className="w-1/2 h-20 flex justify-end gap-10 lg:gap-8 items-center">
-          <MenuList  clasname={" text-sm xl:text-lg"}/>
+          <MenuList  clasname={""}/>
         </div>
 
         <div className="w-1/4 h-20 flex justify-end items-center">
-          <Button label={"Login"} color={"b"} />
-          <Button color={"o"} label={"Sing Up"} />
+          <Button label={"Login"} color={"b"} customClass={"text-sm"} />
+          <Button color={"o"} label={"Singup"} />
         </div>
       </div>
 

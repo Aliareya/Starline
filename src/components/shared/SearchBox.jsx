@@ -22,7 +22,7 @@ function SearchBox() {
   }
 
   return (
-    <form onSubmit={handleSubmit(searchbuss)} className=" py-7 px-5 flex gap-5 justify-center items-center  rounded-lg border border-[#065656ca] bg-white">
+    <form onSubmit={handleSubmit(searchbuss)} className=" py-7 px-5 flex justify-between items-center  rounded-lg border border-[#065656ca] bg-white">
       <div className="w-1/4">
         <Input
           icon={"basil:location-outline"}
@@ -47,7 +47,7 @@ function SearchBox() {
           label={"Search Buses"}
           color={"g"}
           icon={"bitcoin-icons:search-filled"}
-          customClass={" gap-5 py-2"}
+          customClass={"w-full py-2"}
         />
       </div>
     </form>
