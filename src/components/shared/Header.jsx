@@ -28,7 +28,7 @@ function Header() {
     {!ismobail  ? (
       <div className="w-full max-md:hidden md:flex h-20 flex justify-between items-center">
         <div className="w-1/4 h-20">
-          <img src={logo} className="xl:w-36 h-20 lg:w-32 cursor-pointer" alt="" />
+          <img src={logo} className="xl:w-32 h-20 lg:w-32 cursor-pointer" alt="" />
         </div>
 
         <div className="w-1/2 h-20 flex justify-end gap-10 lg:gap-8 items-center">

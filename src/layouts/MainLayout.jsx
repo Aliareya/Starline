@@ -7,7 +7,7 @@ function MainLayout() {
   return (
     <div className='w-full '>
 
-      <div className='w-full z-50 xl:px-16 lg:px-8 md:px-0 md:pl-4 max-md:pl-5 shadow-md bg-[#ffffff] fixed top-0'>
+      <div className='w-full z-50 lg:px-10 md:px-2 px-2  shadow-md bg-[#ffffff] fixed top-0'>
         <Header/>
       </div>
 
