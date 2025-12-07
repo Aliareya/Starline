@@ -22,7 +22,7 @@ function SearchBox() {
   }
 
   return (
-    <form onSubmit={handleSubmit(searchbuss)} className="w-[800px] py-7 px-5 flex gap-5 justify-center items-center  rounded-lg border border-[#065656ca] bg-white">
+    <form onSubmit={handleSubmit(searchbuss)} className=" py-7 px-5 flex gap-5 justify-center items-center  rounded-lg border border-[#065656ca] bg-white">
       <div className="w-1/4">
         <Input
           icon={"basil:location-outline"}

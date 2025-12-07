@@ -13,13 +13,13 @@ function HomeBanner() {
       className="w-full h-[670px] flex flex-col justify-center items-center bg-top bg-cover"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="w-full h-[670px] gradient-light flex gap-6 pt-40 px-20">
-        <div className="w-1/2 flex flex-col">
+      <div className="w-full h-[670px] gradient-light flex pt-32">
+        <div className="w-1/2  flex flex-col  pl-20">
           <h1 className="text-[70px] text-white font-semibold font-[sans-serif] text-gradient">
             Travel in Comfort,
           </h1>
           <div className="flex items-center mb-10">
-            <span className="text-[50px] text-[#003b3b] font-semibold font-[sans-serif] pr-3">
+            <span className="text-[50px] text-[#4bbebe] font-semibold font-[sans-serif] pr-3">
               Arrive with
             </span>
             <SplitText
@@ -46,7 +46,7 @@ function HomeBanner() {
             className="absolute bottom-0"
          />
         </div>
-        <div className='w-full  absolute -bottom-5 '>
+        <div className='w-2/3 pl-20  absolute -bottom-5 '>
           <SearchBox/>
         </div>
       </div>

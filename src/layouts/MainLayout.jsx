@@ -15,7 +15,7 @@ function MainLayout() {
         <AppRoutes/>
       {/* </div> */}
 
-      <div className='w-full PX-16'>
+      <div className='w-full px-16'>
         <Footer/>
       </div>
 
