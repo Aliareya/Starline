@@ -7,13 +7,13 @@ function MainLayout() {
   return (
     <div className='w-full '>
 
-      <div className='w-full z-50 px-16 shadow-md bg-[#ffffff]/70 fixed top-0'>
+      <div className='w-full z-50 lg:px-16 md:px-0 md:pl-4 max-md:pl-5 shadow-md bg-[#ffffff]/70 fixed top-0'>
         <Header/>
       </div>
 
-      {/* <div className='px-16 pt-20'> */}
-        <AppRoutes/>
-      {/* </div> */}
+      <div className='px-16 pt-20'> 
+        {/* <AppRoutes/> */}
+       </div>
 
       <div className='w-full px-16'>
         <Footer/>
