@@ -36,7 +36,7 @@ function MobailHeader() {
         <MenuList clasname="pl-3 py-1 !font-normal" />
         <div className="w-full h-20 pt-1 px-2">
           <Button label={"Login"} color={"b"} customClass="w-full bg-gray-200 mb-2 py-2" />
-          <Button color={"o"} label={"Sing Up"} customClass="w-full py-2" />
+          <Button color={"g"} label={"Sing Up"} customClass="w-full py-2" />
         </div>
       </div>
     </>
