@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
-
+*{
+ font-family: sans-serif
+}
 @layer utilities {
   .btn-gradient {
     @apply bg-gradient-to-tr from-[rgb(5,102,102)] to-[rgb(16,125,125)];
@@ -13,7 +15,14 @@
 @layer utilities {
   .gradient-light {
     @apply bg-gradient-to-r;
-    background-image: linear-gradient(to right, rgba(5, 102, 102, 0.699), rgba(255, 255, 255, 0.215));
+    background-image: linear-gradient(to right, #056666b2, rgba(255, 255, 255, 0.215));
+  }
+}
+
+@layer utilities {
+  .gradientcart {
+    @apply bg-gradient-to-r;
+    background-image: linear-gradient(to right, #056666b2, #aac7c7b2);
   }
 }
 
@@ -39,4 +48,8 @@
   opacity: 0;
   transform: translateY(-20px);
   transition: all 0.4s ease-in;
+}
+
+.mainbordercolor{
+  border-color: #003b3b28
 }

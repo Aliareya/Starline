@@ -1,13 +1,13 @@
 import HomeBanner from "../../components/banner/HomeBanner";
+import SimpleCart from "../../components/card/SimpleCart";
+import WhyChoose from "./components/WhyChoose";
 
 function Home() {
-  const handleAnimationComplete = () => {
-    console.log("All letters have animated!");
-  };
+
   return (
     <div>
       <HomeBanner/>
-      <div className="w-full h-[700px] bg-white"></div>
+      <WhyChoose/>
     </div>
   );
 }

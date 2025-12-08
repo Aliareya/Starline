@@ -5,13 +5,30 @@ const SiteContext = createContext();
 export const SiteContextProvider = ({ children }) => {
   const [menu] = useState(["Home", "About", "Cars","FAQ","Privacy", "Contact"]);
 
+  const WhyChooseus = [
+  { 
+    icon : "ic:outline-security",
+    title: "Safe & Secure",
+    desc: "GPS tracking and verified drivers for your safety",
+  },
+  {
+    icon : "mingcute:time-line",
+    title: "On-Time Guarantee",
+    desc: "We respect your time with punctual departures",
+  },
+  {
+    icon : "material-symbols:star-outline-rounded",
+    title: "Comfort First",
+    desc: "Luxury seats with AC and entertainment",
+  }
+];
 
-//   Experience comfort from the moment you depart.
-// Reach your destination feeling refreshed with Star Line.
+
+
 
 
   return (
-    <SiteContext.Provider value={{ menu }}>
+    <SiteContext.Provider value={{ menu , WhyChooseus}}>
       {children}
     </SiteContext.Provider>
   );
