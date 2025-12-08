@@ -1,5 +1,5 @@
 import HomeBanner from "../../components/banner/HomeBanner";
-import SimpleCart from "../../components/card/SimpleCart";
+import PupularRoutes from "./components/PupularRoutes";
 import WhyChoose from "./components/WhyChoose";
 
 function Home() {
@@ -8,6 +8,7 @@ function Home() {
     <div>
       <HomeBanner/>
       <WhyChoose/>
+      <PupularRoutes/>
     </div>
   );
 }
