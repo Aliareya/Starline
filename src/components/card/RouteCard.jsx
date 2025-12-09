@@ -4,7 +4,7 @@ import Button from "../ui/botton/Button"
 
 function RouteCard({mystyle=null}) {
   return (
-    <div className={`w-full group px-5 lg:py-5 md:py-6 py-5  rounded-lg flex flex-col justify-center items-center shadow-md border border-[#003b3b28] bg-[#ffffff6f] ${mystyle}`}>
+    <div className={`w-full group px-5 lg:py-5 md:py-6 py-5  rounded-lg flex flex-col gap-1 justify-center items-center shadow-md border border-[#003b3b28] bg-[#ffffff6f] ${mystyle}`}>
       <div className='w-full flex items-center justify-between  xl:gap-10 gap-5'>
          <div className='flex gap-1'>
             <Icon icon="akar-icons:location" width="22" height="22"  style={{color: '#056666b2'}} />
