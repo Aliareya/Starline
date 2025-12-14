@@ -4,6 +4,8 @@ const SiteContext = createContext();
 
 export const SiteContextProvider = ({ children }) => {
   const [menu] = useState(["Home", "About", "Cars","FAQ","Privacy", "Contact"]);
+  const [footerMenuP1] = useState(["Home", "About", "Cars", "Contact"]);
+  const [footerMenuP2] = useState(["Privacy", "Services" , "FAQ" , "Terms"]);
 
   const WhyChooseus = [
   { 
@@ -28,7 +30,7 @@ export const SiteContextProvider = ({ children }) => {
 
 
   return (
-    <SiteContext.Provider value={{ menu , WhyChooseus}}>
+    <SiteContext.Provider value={{ menu , WhyChooseus ,footerMenuP1 ,footerMenuP2}}>
       {children}
     </SiteContext.Provider>
   );

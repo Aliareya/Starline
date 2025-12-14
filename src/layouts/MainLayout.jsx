@@ -15,9 +15,9 @@ function MainLayout() {
         <AppRoutes/>
        </div>
 
-      {/* <div className='w-full px-16'>
+      <div className='w-full '>
         <Footer/>
-      </div> */}
+      </div>
 
     </div>
   )
