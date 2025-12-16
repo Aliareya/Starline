@@ -33,25 +33,25 @@ function Footer() {
         <div className="w-[20%] max-md:w-[30%] max-sm:w-full pt-1">
           <h1 className="font-semibold text-[#053a3a] ">Contact Us</h1>
           <div className="w-full pt-2 flex flex-col gap-3 ">
-            <div>
+            <div className="flex gap-2">
               <Icon
-                icon={"basil:location-outline"}
+                icon={"solar:phone-bold"}
                 width="22"
                 height="22"
                 style={{ color: "#053A3A" }}
               />
               <p>+1 (555) 465 432</p>
             </div>
-            <div>
+            <div className="flex gap-2">
               <Icon
-                icon={"basil:location-outline"}
+                icon={"line-md:email-filled"}
                 width="22"
                 height="22"
                 style={{ color: "#053A3A" }}
               />
               <p>ali.test@gamil.com</p>
             </div>
-            <div>
+            <div className="flex gap-2">
               <Icon
                 icon={"basil:location-outline"}
                 width="22"
