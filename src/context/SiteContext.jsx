@@ -25,12 +25,35 @@ export const SiteContextProvider = ({ children }) => {
   }
 ];
 
+const siteBio = 
+`With over 15 years of experience, TravelEase has been connecting people
+ across the nation with safe, comfortable, and affordable bus travel. Our modern fleet and 
+ professional drivers ensure every journey is memorable for all the right reasons.`
+
+ const userCommend = [
+  {
+    name: "Sarah Johnson",
+    stars: 5,
+    commnet: "Excellent service! The bus was comfortable and the driver was professional."
+  },
+  {
+    name: "Michael Chen",
+    stars: 5,
+    commnet: "Best bus travel experience. Clean, on-time, and affordable. Highly recommend!"
+  },
+  {
+    name: "Emma Davis",
+    stars: 4,
+    commnet: "Safe and comfortable journey. Will definitely book again for my next trip."
+  }
+];
+
 
 
 
 
   return (
-    <SiteContext.Provider value={{ menu , WhyChooseus ,footerMenuP1 ,footerMenuP2}}>
+    <SiteContext.Provider value={{ menu , WhyChooseus ,footerMenuP1 ,footerMenuP2 ,siteBio ,userCommend}}>
       {children}
     </SiteContext.Provider>
   );
