@@ -2,6 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import CommendCard from "../../../components/card/CommendCard";
 import { useSiteConstant } from "../../../context/SiteContext";
+import Loader from "../../../components/shared/Loader";
 
 function UserCommend() {
    const {userCommend} = useSiteConstant();
@@ -14,11 +15,15 @@ function UserCommend() {
         Real Experiences from real Travelers
       </p>
       <div className="w-full flex justify-between lg:flex-row flex-col gap-6 md:pt-10 max-md:pt-8 max-sm:pt-5">
-         {userCommend.map((commned , index)=>{
+         {/* {userCommend.map((commned , index)=>{
             return(
               <CommendCard commned={commned} key={index}/>
             )
-         })}
+         })} */}
+         <div className="w-full flex justify-center items-center">
+           <Loader/>
+
+         </div>
       </div>
     </div>
   );

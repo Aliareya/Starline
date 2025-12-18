@@ -4,6 +4,7 @@ import InfoSection from "./components/InfoSection"
 import PupularRoutes from "./components/PupularRoutes";
 import WhyChoose from "./components/WhyChoose";
 import UserCommend from "./components/UserCommend";
+import Loader from "../../components/shared/Loader";
 
 function Home() {
 
