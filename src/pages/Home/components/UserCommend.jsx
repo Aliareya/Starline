@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import CommendCard from "../../../components/card/CommendCard";
 import { useSiteConstant } from "../../../context/SiteContext";
 import Loader from "../../../components/shared/Loader";
 
 function UserCommend() {
-   const {userCommend} = useSiteConstant();
+  const { userCommend } = useSiteConstant();
+  const [loading, setloading] = useState(true);
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setloading(false)
+    }, 3000)
+  },[])
+
   return (
     <div className="w-full h-auto lg:px-11 md:px-5 px-3  pt-5 pb-10">
       <h1 className="lg:text-4xl md:text-3xl text-3xl darkgreen max-sm:font-bold font-semibold text-center font-[sans-serif]">
@@ -15,15 +23,17 @@ function UserCommend() {
         Real Experiences from real Travelers
       </p>
       <div className="w-full flex justify-between lg:flex-row flex-col gap-6 md:pt-10 max-md:pt-8 max-sm:pt-5">
-         {/* {userCommend.map((commned , index)=>{
-            return(
-              <CommendCard commned={commned} key={index}/>
-            )
-         })} */}
-         <div className="w-full flex justify-center items-center">
-           <Loader/>
-
-         </div>
+        {loading ? (
+          <div className="w-full flex justify-center items-center">
+            <Loader />
+          </div>
+        ) : (
+          <>
+            {userCommend?.map((commned, index) => {
+              return <CommendCard commned={commned} key={index} />;
+            })}
+          </>
+        )}
       </div>
     </div>
   );
