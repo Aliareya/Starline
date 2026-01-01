@@ -3,9 +3,11 @@ import logo from "../../assets/icon/logo.svg";
 import { Icon } from "@iconify/react";
 import MenuList from "./MenuList";
 import Button from "../ui/botton/Button";
+import { useNavigate } from "react-router-dom";
 
 function MobailHeader() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate()
 
   const handleopenSubmenu = () => {
     setOpen(!open);
@@ -35,8 +37,8 @@ function MobailHeader() {
       >
         <MenuList clasname="pl-3 py-1 !font-normal" />
         <div className="w-full h-20 pt-1 px-2">
-          <Button label={"Login"} color={"b"} customClass="w-full bg-gray-200 mb-2 py-2" />
-          <Button color={"g"} label={"Sing Up"} customClass="w-full py-2" />
+          <Button label={"Login"} color={"b"} click={()=>navigate('/login')} customClass="w-full bg-gray-200 mb-2 py-2" />
+          <Button color={"g"} click={()=>navigate('/register')} label={"Sing Up"} customClass="w-full py-2" />
         </div>
       </div>
     </>
