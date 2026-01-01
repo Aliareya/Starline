@@ -2,17 +2,20 @@ import React from 'react';
 import { useSiteConstant } from '../../context/SiteContext';
 import { useNavigate } from 'react-router-dom';
 
-function MenuList({clasname =null , value = null}) {
+function MenuList({clasname =null , value = null , setOpen=null}) {
   const navigate = useNavigate();
   const {menu} = useSiteConstant();
   const output = value !== null ? value : menu;
 
   function clickpath(item){
     if(item == "Home"){
+      // setOpen(false)
       navigate('/')
     }else{
+      // setOpen(false)
       navigate(`/${item.toLowerCase()}`)
     }
+    setOpen(false)
   }
 
 

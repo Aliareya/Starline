@@ -13,6 +13,11 @@ function MobailHeader() {
     setOpen(!open);
   };
 
+  const handlenaviget=(path)=>{
+    setOpen(false)
+    navigate(`/${path}`)
+  }
+
   return (
     <>
       <div className="w-full h-20 flex justify-between">
@@ -35,10 +40,10 @@ function MobailHeader() {
         className={`${open ? "" : "hidden"} w-full px-2 absolute left-0 z-50 top-20 h-auto bg-slate-100 shadow-md pb-5 pt-1 rounded-b-md 
           ${open ? "menu-open " : "menu-close "}`}
       >
-        <MenuList clasname="pl-3 py-1 !font-normal" />
+        <MenuList clasname="pl-3 py-1 !font-normal" setOpen={setOpen} />
         <div className="w-full h-20 pt-1 px-2">
-          <Button label={"Login"} color={"b"} click={()=>navigate('/login')} customClass="w-full bg-gray-200 mb-2 py-2" />
-          <Button color={"g"} click={()=>navigate('/register')} label={"Sing Up"} customClass="w-full py-2" />
+          <Button label={"Login"} color={"b"} click={()=>handlenaviget('login')} customClass="w-full bg-gray-200 mb-2 py-2" />
+          <Button color={"g"} click={()=>handlenaviget('register')} label={"Sing Up"} customClass="w-full py-2" />
         </div>
       </div>
     </>
