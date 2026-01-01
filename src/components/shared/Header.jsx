@@ -3,10 +3,11 @@ import logo from "../../assets/icon/logo.svg";
 import MenuList from "./MenuList";
 import Button from "../ui/botton/Button";
 import MobailHeader from "./MobailHeader";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const [ismobail, setMobail] = useState();
-
+  const navigate = useNavigate();
 
   useEffect(() => {
     const checkMobile = () => {
@@ -36,8 +37,8 @@ function Header() {
         </div>
 
         <div className="w-1/4 h-20 flex justify-end items-center">
-          <Button label={"Login"} color={"b"} customClass={"text-sm"} />
-          <Button color={"o"} label={"Singup"} />
+          <Button label={"Login"} color={"b"} customClass={"text-sm"} click={()=>navigate('/login')}  />
+          <Button color={"o"} label={"Singup"} click={()=>navigate('/register')} />
         </div>
       </div>
 

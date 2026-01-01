@@ -11,7 +11,7 @@ function Input({
 }) {
   return (
     <>
-      <label htmlFor="" className="text-md font-semibold">
+      <label htmlFor="" className="text-sm darkgreen font-semibold">
         {lable}
       </label>
       <div className="flex border border-[#e0ebeb] p-1 justify-center items-center rounded-md">
