@@ -11,7 +11,7 @@ function Home() {
   return (
     <div>
       <HomeBanner/>
-      <WhyChoose/>
+      {/* <WhyChoose/> */}
       <PupularRoutes/>
       <InfoSection/>
       <UserCommend/>

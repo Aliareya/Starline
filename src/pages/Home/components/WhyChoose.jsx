@@ -11,7 +11,7 @@ function WhyChoose() {
         <div className="w-full flex lg:flex-row flex-col gap-6 pt-10">
          {WhyChooseus.map((item , index)=>{
             return(
-               <SimpleCart item={item} key={`__${index}`}/>
+               <SimpleCart item={item} key={`__${index}`} is_about={true}/>
             )
          })}
         </div>
