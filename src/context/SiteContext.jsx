@@ -107,12 +107,12 @@ const statsabout = [
   }
 ];
 
-
+const aboutbanner = {title:'About StarLine' , desc : "Connecting people and places since 2009 with safe, comfortable,<br></br> and affordable bus travel"}
 
 
 
   return (
-    <SiteContext.Provider value={{ statsabout,missionVisionabout,aboutcart ,  menu , WhyChooseus ,footerMenuP1 ,footerMenuP2 ,siteBio ,userCommend}}>
+    <SiteContext.Provider value={{aboutbanner, statsabout,missionVisionabout,aboutcart ,  menu , WhyChooseus ,footerMenuP1 ,footerMenuP2 ,siteBio ,userCommend}}>
       {children}
     </SiteContext.Provider>
   );
