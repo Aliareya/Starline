@@ -48,12 +48,71 @@ const siteBio =
   }
 ];
 
+const aboutcart =  [
+  {
+    title: "Safety First",
+    description:
+      "Your safety is our top priority. All our buses are equipped with modern safety features and driven by experienced professionals."
+  },
+  {
+    title: "Customer Comfort",
+    description:
+      "We believe in providing exceptional comfort throughout your journey with luxury seating and premium amenities."
+  },
+  {
+    title: "Reliability",
+    description:
+      "We respect your time. Our buses depart on schedule and arrive on time, ensuring you reach your destination as planned."
+  },
+  {
+    title: "Affordability",
+    description:
+      "Quality travel shouldn't break the bank. We offer competitive pricing without compromising on service quality."
+  }
+];
+
+const missionVisionabout = [
+  {
+    title: "Our Mission",
+    description:
+      "To provide safe, comfortable, and affordable bus travel that connects communities and creates memorable journey experiences for all our passengers."
+  },
+  {
+    title: "Our Vision",
+    description:
+      "To be the nation's most trusted and preferred bus travel company, setting new standards in passenger comfort, safety, and environmental sustainability."
+  }
+];
+
+const statsabout = [
+  {
+    title: "500K+",
+    description: "Happy Travelers",
+    icon:'mdi:users-outline'
+  },
+  {
+    title: "150+",
+    description: "Cities Connected",
+    icon:'jam:world'
+  },
+  {
+    title: "15+",
+    description: "Years Experience",
+    icon:'ic:outline-group-work'
+  },
+  {
+    title: "99.9%",
+    description: "Safety Record",
+    icon:'tdesign:secured'
+  }
+];
+
 
 
 
 
   return (
-    <SiteContext.Provider value={{ menu , WhyChooseus ,footerMenuP1 ,footerMenuP2 ,siteBio ,userCommend}}>
+    <SiteContext.Provider value={{ statsabout,missionVisionabout,aboutcart ,  menu , WhyChooseus ,footerMenuP1 ,footerMenuP2 ,siteBio ,userCommend}}>
       {children}
     </SiteContext.Provider>
   );

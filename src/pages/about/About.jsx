@@ -1,17 +1,19 @@
 import React from 'react'
 import img  from '../../assets/images/img/img1.jpg'
 import SimpleCart from '../../components/card/SimpleCart'
+import { useSiteConstant } from '../../context/SiteContext'
 
 function About() {
-  const card = {title : "500K+" , icon:'mdi:users-outline', desc:'Happy Travelers' }
-  const card2 = {title : "Safety First" , icon:'', desc:'Your safety is our top priority. All our buses are equipped with modern safety features and driven by experienced professionals.' }
+  const {aboutcart , missionVisionabout ,statsabout} = useSiteConstant()
+
   return (
     <div className='w-full h-auto lg:px-11 md:px-6 px-4  '>
       <div className='w-full md:grid lg:grid-cols-4 max-sm:grid md:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 gap-5'>
-          <SimpleCart item={card} mystyle={'w-full !py-4'} Iconstyle={'w-16 h-16'}/>
-          <SimpleCart item={card} mystyle={'w-full !py-4'} Iconstyle={'w-16 h-16'}/>
-          <SimpleCart item={card} mystyle={'w-full !py-4'} Iconstyle={'w-16 h-16'}/>
-          <SimpleCart item={card} mystyle={'w-full !py-4'} Iconstyle={'w-16 h-16'}/>
+        {statsabout.map((item , index)=>{
+          return(
+            <SimpleCart item={item} mystyle={'w-full !py-4'} Iconstyle={'w-16 h-16'} is_about={true}/>
+          )
+        })}
       </div>
       <div className='w-full lg:pt-20 md:pt-10 max-sm:pt-8 flex lg:flex-row max-md:flex-col md:flex-col gap-7'>
         <div className='lg:w-1/2 md:w-full '>
@@ -32,16 +34,20 @@ function About() {
       <div className='w-full pt-12 flex flex-col justify-center items-center'>
         <h1 className='text-2xl font-bold'>Our Core Values</h1>
         <div className='w-full pt-5 grid lg:grid-cols-2 md:grid-cols-1 gap-5'>
-          <SimpleCart item={card2} mystyle={'w-full !items-start !justify-start !py-5 !px-5'} Iconstyle={'w-16 h-16'} />
-          <SimpleCart item={card2} mystyle={'w-full !items-start !justify-start !py-5 !px-5'} Iconstyle={'w-16 h-16'} />
-          <SimpleCart item={card2} mystyle={'w-full !items-start !justify-start !py-5 !px-5'} Iconstyle={'w-16 h-16'} />
-          <SimpleCart item={card2} mystyle={'w-full !items-start !justify-start !py-5 !px-5'} Iconstyle={'w-16 h-16'} />
+          {aboutcart.map((item , index)=>{
+            return(
+              <SimpleCart key={index} item={item} mystyle={'w-full !items-start !justify-start !py-5 !px-5'} Iconstyle={'w-16 h-16'} />
+            )
+          })}
         </div>
       </div>
       <div className='w-full pt-5 grid lg:grid-cols-2 md:grid-cols-1 gap-5'>
-          <SimpleCart item={card2} mystyle={'w-full !gradientcart !items-start !justify-start !py-5 !px-5'} Iconstyle={'w-16 h-16'} />
-          <SimpleCart item={card2} mystyle={'w-full !gradient-light !items-start !justify-start !py-5 !px-5'} Iconstyle={'w-16 h-16'} />
-        </div>
+        {missionVisionabout.map((item , index)=>{
+            return(
+              <SimpleCart key={index} item={item} mystyle={'w-full !items-start !justify-start !py-5 !px-5'} Iconstyle={'w-16 h-16'} />
+            )
+          })}
+      </div>
     </div>
   )
 }
