@@ -11,17 +11,17 @@ export const SiteContextProvider = ({ children }) => {
   { 
     icon : "ic:outline-security",
     title: "Safe & Secure",
-    desc: "GPS tracking and verified drivers for your safety",
+    description: "GPS tracking and verified drivers for your safety",
   },
   {
     icon : "mingcute:time-line",
     title: "On-Time Guarantee",
-    desc: "We respect your time with punctual departures",
+    description: "We respect your time with punctual departures",
   },
   {
     icon : "material-symbols:star-outline-rounded",
     title: "Comfort First",
-    desc: "Luxury seats with AC and entertainment",
+    description: "Luxury seats with AC and entertainment",
   }
 ];
 
