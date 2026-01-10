@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
-function Input({
+function Textarea({
   lable = null,
   placeholder = null,
   type = "text",
@@ -21,10 +21,10 @@ function Input({
           height="22"
           style={{ color: "#053A3A" }}
         />
-        <input 
+        <textarea 
          {...register}
          type={type}
-         className={`w-full py-1 focus:border-[#05666653] outline-none bg-transparent pl-2 ${inputclass}`} 
+         className={`w-full py-1   outline-none bg-transparent pl-2 ${inputclass}`} 
          placeholder={placeholder}
          />
       </div>
@@ -32,4 +32,4 @@ function Input({
   );
 }
 
-export default Input;
+export default Textarea;

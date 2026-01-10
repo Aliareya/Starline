@@ -19,7 +19,7 @@ function PageBanner() {
         {location === "/contact" && (
           <>
             <h1 className="text-3xl font-bold ">Contact Us</h1>
-            <p className="text-base font-medium text-center pt-5">
+            <p className="text-base font-medium text-center pt-5 max-sm:px-2">
               Have questions? We're here to help. Reach out to us anytime and we'll respond
               <br></br>
               as soon as we can.
