@@ -6,7 +6,7 @@ import Register from "../pages/signup/Register";
 import Login from "../pages/login/Login";
 import Contact from "../pages/contact/Contact"
 import FAQ from "../pages/faq/FAQ";
-import Privacy from "../privacy/Privacy";
+import Privacy from "../pages/privacy/Privacy";
 
 function AppRoutes() {
   return (

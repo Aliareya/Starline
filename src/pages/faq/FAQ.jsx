@@ -1,7 +1,10 @@
 import React from 'react'
 import FAQCart from './parts/FAQCart'
+import Button from "../../components/ui/botton/Button"
+import { useNavigate } from 'react-router-dom'
 
 function FAQ() {
+   const navigate = useNavigate()
    const questionsData = [
   // General Questions
   { type: "General Questions", question: "How long does a car inspection take?" },
@@ -16,12 +19,19 @@ function FAQ() {
   return (
     <div className='w-full h-auto bg-slate-50 py-8 flex flex-col items-center justify-center'>
       <div className='lg:w-2/3 w-full  rounded-lg shadow-lg bg-white px-5 py-5 flex flex-col '>
-      <h1 className='text-2xl text-start py-4 font-bold darkgreen'>Booking & Reservations</h1>
+         <h1 className='text-2xl text-start py-4 font-bold darkgreen'>Booking & Reservations</h1>
          {questionsData.map((item , index)=>{
             return(
                <FAQCart key={index} question={item.question}/>
             )
          })}
+      </div>
+      <div className='lg:w-2/3 w-full h-auto bg-[#81929338]/10 mt-10 px-4 py-4 rounded-lg flex flex-col justify-center items-center'>
+         <h1 className='text-xl text-start py-4 font-semibold '>
+            Still have questions?
+         </h1>
+         <p className='text-base text-center'>Our customer support team is here to help you 24/7.</p>
+         <Button click={()=>navigate('/contact')} label={"Contact Support"} color={'g'} customClass={'py-2 my-3'}/>
       </div>
     </div>
   )
