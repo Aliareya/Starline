@@ -1,8 +1,10 @@
-import { useLocation, useMatch } from "react-router-dom";
+import { useLocation, useMatch, useNavigate } from "react-router-dom";
+import { Icon } from "@iconify/react";
 
 function PageBanner() {
   const location = useLocation();
   const isCarDetails = useMatch("/car/:id");
+  const navigate = useNavigate()
 
   const banners = {
     "/about": {
@@ -59,12 +61,17 @@ function PageBanner() {
       )}
 
       {isCarDetails && (
-        <>
+        <div>
+          <div onClick={()=>navigate('/cars') }
+            className="px-5 py-2  absolute left-7 cursor-pointer top-24 flex items-center gap-2">
+            <Icon icon="famicons:arrow-back" width="20" height="20"  style={{color: '#000'}} />
+            <span className="text-sm">Back</span>
+          </div>
           <h1 className="text-3xl font-bold">Car Details</h1>
           <p className="text-base font-medium pt-5">
             Explore specifications, amenities, and booking options for this vehicle.
           </p>
-        </>
+        </div>
       )}
     </div>
   );
