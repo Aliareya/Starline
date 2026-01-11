@@ -9,7 +9,7 @@ export default function CarDetails() {
    const car = cars?.find(item => item.name === id);
 
    return (
-    <div className="max-w-7xl mx-auto lg:p-6 md:p-3 max-sm:p-3 space-y-10">
+    <div className="max-w-7xl mx-auto lg:px-12 max-md:px-5 md:px-5 px-3 lg:p-6 md:p-3 max-sm:p-3 space-y-10">
 
       {/* TOP SECTION */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -122,11 +122,11 @@ export default function CarDetails() {
             </div>
           </div>
 
-          {/* BOOK BUTTON */}
+          {/* BOOK BUTTON
           <button className="w-full mt-4 bg-teal-700 hover:bg-teal-800 transition text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-2">
             <Icon icon="mdi:calendar-check-outline" />
             Book This Bus
-          </button>
+          </button> */}
 
         </div>
       </div>
