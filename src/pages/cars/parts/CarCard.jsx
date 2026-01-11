@@ -1,6 +1,8 @@
 import { Icon } from "@iconify/react";
+import { useNavigate } from "react-router-dom";
 
 export default function CarCard({ car }) {
+  const navigate = useNavigate()
   return (
     <div className="w-full border mainbordercolor bg-white rounded-2xl shadow-md overflow-hidden grid grid-cols-1 lg:grid-cols-2">
       
@@ -94,11 +96,8 @@ export default function CarCard({ car }) {
 
         {/* Buttons */}
         <div className="mt-6 flex gap-4">
-          <button className="flex-1 bg-teal-700 text-white py-3 rounded-xl font-semibold hover:bg-teal-800 transition">
+          <button onClick={()=>navigate(`/car/${car.name}`) } className="flex-1 bg-teal-700 text-white py-3 rounded-xl font-semibold hover:bg-teal-800 transition">
             View Details
-          </button>
-          <button className="flex-1 bg-orange-400 text-white py-3 rounded-xl font-semibold hover:bg-orange-500 transition">
-            Book This Bus
           </button>
         </div>
 

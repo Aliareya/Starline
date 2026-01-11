@@ -8,6 +8,7 @@ import Contact from "../pages/contact/Contact"
 import FAQ from "../pages/faq/FAQ";
 import Privacy from "../pages/privacy/Privacy";
 import Cars from "../pages/cars/Cars";
+import CarDetails from "../pages/cardetails/CarDetails";
 
 function AppRoutes() {
   return (
@@ -18,7 +19,7 @@ function AppRoutes() {
         <Route path="/faq" element={<FAQ/>} />
         <Route path="/privacy" element={<Privacy/>} />
         <Route path="/cars" element={<Cars/>} />
-
+        <Route path="/car/:id" element={<CarDetails/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="/login" element={<Login/>} />
       </Routes>
