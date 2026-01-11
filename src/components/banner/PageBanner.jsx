@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 function PageBanner() {
   const location = useLocation();
   const isCarDetails = useMatch("/car/:id");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const banners = {
     "/about": {
@@ -21,7 +21,8 @@ function PageBanner() {
       title: "Contact Us",
       desc: (
         <>
-          Have questions? We're here to help. Reach out to us anytime and we'll respond
+          Have questions? We're here to help. Reach out to us anytime and we'll
+          respond
           <br />
           as soon as we can.
         </>
@@ -31,9 +32,11 @@ function PageBanner() {
       title: "Our Cars",
       desc: (
         <>
-          Experience luxury and comfort with our modern, well-maintained fleet of
+          Experience luxury and comfort with our modern, well-maintained fleet
+          of
           <br />
-          buses. Each vehicle is equipped with premium amenities for your journey.
+          buses. Each vehicle is equipped with premium amenities for your
+          journey.
         </>
       ),
     },
@@ -50,30 +53,42 @@ function PageBanner() {
   const banner = banners[location.pathname];
 
   return (
-    <div className="w-full pt-32 pb-20 flex flex-col justify-center items-center text-center">
+    <>
       {banner && (
-        <>
-          <h1 className="text-3xl font-bold">{banner.title}</h1>
-          <p className="text-base font-medium pt-5 max-sm:px-2">
-            {banner.desc}
-          </p>
-        </>
-      )}
+        <div className="w-full pt-32 pb-20 flex flex-col justify-center items-center text-center">
+          {banner && (
+            <>
+              <h1 className="text-3xl font-bold">{banner.title}</h1>
+              <p className="text-base font-medium pt-5 max-sm:px-2">
+                {banner.desc}
+              </p>
+            </>
+          )}
 
-      {isCarDetails && (
-        <div>
-          <div onClick={()=>navigate('/cars') }
-            className="px-5 py-2  absolute left-7 max-sm:left-2 cursor-pointer top-24 flex items-center gap-2">
-            <Icon icon="famicons:arrow-back" width="20" height="20"  style={{color: '#000'}} />
-            <span className="text-sm">Back</span>
-          </div>
-          <h1 className="text-3xl font-bold">Car Details</h1>
-          <p className="text-base font-medium pt-5">
-            Explore specifications, amenities, and booking options for this vehicle.
-          </p>
+          {isCarDetails && (
+            <div>
+              <div
+                onClick={() => navigate("/cars")}
+                className="px-5 py-2  absolute left-7 max-sm:left-2 cursor-pointer top-24 flex items-center gap-2"
+              >
+                <Icon
+                  icon="famicons:arrow-back"
+                  width="20"
+                  height="20"
+                  style={{ color: "#000" }}
+                />
+                <span className="text-sm">Back</span>
+              </div>
+              <h1 className="text-3xl font-bold">Car Details</h1>
+              <p className="text-base font-medium pt-5">
+                Explore specifications, amenities, and booking options for this
+                vehicle.
+              </p>
+            </div>
+          )}
         </div>
       )}
-    </div>
+    </>
   );
 }
 

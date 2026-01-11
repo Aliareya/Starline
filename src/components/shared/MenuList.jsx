@@ -11,8 +11,9 @@ function MenuList({clasname =null , value = null , setOpen=null}) {
     if(item == "Home"){
       // setOpen(false)
       navigate('/')
+    }else if(item === "Today Routes"){
+      navigate('/routes')
     }else{
-      // setOpen(false)
       navigate(`/${item.toLowerCase()}`)
     }
     setOpen(false)

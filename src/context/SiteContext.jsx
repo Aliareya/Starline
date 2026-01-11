@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const SiteContext = createContext();
 
 export const SiteContextProvider = ({ children }) => {
-  const [menu] = useState(["Home", "About", "Cars","FAQ","Privacy", "Contact"]);
+  const [menu] = useState(["Home","Today Routes", "About", "Cars","FAQ", "Contact"]);
   const [footerMenuP1] = useState(["Home", "About", "Cars", "Contact"]);
   const [footerMenuP2] = useState(["Privacy", "Services" , "FAQ" , "Terms"]);
 
