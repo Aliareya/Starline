@@ -7,6 +7,7 @@ import Login from "../pages/login/Login";
 import Contact from "../pages/contact/Contact"
 import FAQ from "../pages/faq/FAQ";
 import Privacy from "../pages/privacy/Privacy";
+import Cars from "../pages/cars/Cars";
 
 function AppRoutes() {
   return (
@@ -16,6 +17,7 @@ function AppRoutes() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/faq" element={<FAQ/>} />
         <Route path="/privacy" element={<Privacy/>} />
+        <Route path="/cars" element={<Cars/>} />
 
         <Route path="/register" element={<Register/>} />
         <Route path="/login" element={<Login/>} />

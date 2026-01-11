@@ -1,13 +1,16 @@
 import { BrowserRouter } from "react-router-dom";
 import { SiteContextProvider } from "./context/SiteContext";
 import MainLayout from "./layouts/MainLayout";
+import { CarProvider } from "./context/CarContext";
 
 function App() {
   return (
     <SiteContextProvider>
-      <BrowserRouter>
-        <MainLayout />
-      </BrowserRouter>
+      <CarProvider>
+        <BrowserRouter>
+          <MainLayout />
+        </BrowserRouter>
+      </CarProvider>
     </SiteContextProvider>
   );
 }
