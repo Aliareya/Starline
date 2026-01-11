@@ -63,7 +63,7 @@ function PageBanner() {
       {isCarDetails && (
         <div>
           <div onClick={()=>navigate('/cars') }
-            className="px-5 py-2  absolute left-7 cursor-pointer top-24 flex items-center gap-2">
+            className="px-5 py-2  absolute left-7 max-sm:left-2 cursor-pointer top-24 flex items-center gap-2">
             <Icon icon="famicons:arrow-back" width="20" height="20"  style={{color: '#000'}} />
             <span className="text-sm">Back</span>
           </div>
