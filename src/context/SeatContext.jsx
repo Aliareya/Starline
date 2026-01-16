@@ -1,58 +1,81 @@
-import { createContext , useContext , useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const SeatContext = createContext();
-const seats = [
-  { id: "1A", status: "available" },
-  { id: "1B", status: "selected" },
+
+const initialSeats = [
+  { id: "1A", status: "premium" },
+  { id: "1B", status: "premium" },
   { id: "1C", status: "premium" },
-  { id: "1D", status: "booked" },
-  { id: "2A", status: "available" },
-  { id: "2B", status: "selected" },
+  { id: "1D", status: "premium" },
+
+  { id: "2A", status: "premium" },
+  { id: "2B", status: "premium" },
   { id: "2C", status: "premium" },
-  { id: "2D", status: "booked" },
+  { id: "2D", status: "premium" },
+
   { id: "3A", status: "available" },
-  { id: "3B", status: "selected" },
-  { id: "3C", status: "premium" },
+  { id: "3B", status: "available" },
+  { id: "3C", status: "available" },
   { id: "3D", status: "booked" },
+
   { id: "4A", status: "available" },
-  { id: "4B", status: "selected" },
-  { id: "4C", status: "premium" },
+  { id: "4B", status: "available" },
+  { id: "4C", status: "available" },
   { id: "4D", status: "booked" },
+
   { id: "5A", status: "available" },
-  { id: "5B", status: "selected" },
-  { id: "5C", status: "premium" },
+  { id: "5B", status: "available" },
+  { id: "5C", status: "available" },
   { id: "5D", status: "booked" },
+
   { id: "6A", status: "available" },
-  { id: "6B", status: "selected" },
-  { id: "6C", status: "premium" },
+  { id: "6B", status: "available" },
+  { id: "6C", status: "available" },
   { id: "6D", status: "booked" },
+
   { id: "7A", status: "available" },
-  { id: "7B", status: "selected" },
-  { id: "7C", status: "premium" },
-  { id: "7D", status: "booked" },
+  { id: "7B", status: "available" },
+  { id: "7C", status: "available" },
+  { id: "7D", status: "available" },
+
   { id: "8A", status: "available" },
-  { id: "8B", status: "selected" },
-  { id: "8C", status: "premium" },
-  { id: "8D", status: "booked" },
+  { id: "8B", status: "available" },
+  { id: "8C", status: "available" },
+  { id: "8D", status: "available" },
+
   { id: "9A", status: "available" },
-  { id: "9B", status: "selected" },
-  { id: "9C", status: "premium" },
-  { id: "9D", status: "booked" },
+  { id: "9B", status: "available" },
+  { id: "9C", status: "available" },
+  { id: "9D", status: "available" },
+
   { id: "10A", status: "available" },
-  { id: "10B", status: "selected" },
-  { id: "10C", status: "premium" },
-  { id: "10D", status: "booked" },
+  { id: "10B", status: "available" },
+  { id: "10C", status: "available" },
+  { id: "10D", status: "available" },
 ];
 
-export const SeatProvider=({children})=>{
-   return(
-      <SeatContext.Provider value={{seats}}>
-         {children}
-      </SeatContext.Provider>
-   )
-}
+export const SeatProvider = ({ children }) => {
+  const [seats, setSeats] = useState(initialSeats);
 
-export const useSeat = () =>{
-   return useContext(SeatContext)
-}
+  const toggleSeat = (id) => {
+    setSeats(prev =>
+      prev.map(seat => {
+        if (seat.id !== id) return seat;
+        if (seat.status === "booked") return seat;
 
+        return {
+          ...seat,
+          status: seat.status === "selected" ? "available" : "selected",
+        };
+      })
+    );
+  };
+
+  return (
+    <SeatContext.Provider value={{ seats, toggleSeat }}>
+      {children}
+    </SeatContext.Provider>
+  );
+};
+
+export const useSeat = () => useContext(SeatContext);

@@ -6,7 +6,7 @@ function Booking() {
   return (
     <div className='w-full  pt-20'>
       <BookingBanner/>
-      <div className='w-full px-12 max-sm:px-3  py-4 bg-slate-100'>
+      <div className='w-full px-12 max-sm:px-2  py-4 bg-slate-100'>
          <SeatSelection/>
       </div>
     </div>
