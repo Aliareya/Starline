@@ -1,8 +1,10 @@
 import { Icon } from "@iconify/react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 export default function RouteCard({ route }) {
+  const navigate = useNavigate()
   const [selectedTime, setSelectedTime] = useState(null);
   const handleSelect = (time) =>{
    if(selectedTime === time){
@@ -69,6 +71,7 @@ export default function RouteCard({ route }) {
 
       {/* BUTTON */}
       <button
+        onClick={()=>navigate('/booking')}
         disabled={!selectedTime}
         className={`mt-5 py-2 rounded-lg text-sm font-semibold transition my-4 mx-5
           ${

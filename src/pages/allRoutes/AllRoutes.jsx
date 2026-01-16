@@ -43,7 +43,7 @@ export default function AllRoutes() {
     <div className="w-full ">
       
       {/* HEADER */}
-      <div className="bg-teal-800 text-white py-16 pt-32 px-3 text-center">
+      {/* <div className="bg-teal-800 text-white py-16  px-3 text-center">
         <h1 className="text-3xl font-bold">Our Routes</h1>
         <p className="mt-3 text-sm opacity-90">
           Discover all the destinations we serve. Travel comfortably across the country.
@@ -59,11 +59,11 @@ export default function AllRoutes() {
             className="w-full pl-10 py-2 rounded-lg text-gray-800 outline-none"
           />
         </div>
-      </div>
+      </div> */}
 
 
       {/* ROUTES GRID */}
-      <div className="max-w-7xl mx-auto my-10 lg:px-10 md:px-5 max-md:px-5 max-sm:ox-3 pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="max-w-7xl bg-slate-50 pt-8 mx-auto my-10 lg:px-10 md:px-5 max-md:px-5 max-sm:ox-3 pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {routesData.map(route => (
           <RouteCard key={route.id} route={route} />
         ))}

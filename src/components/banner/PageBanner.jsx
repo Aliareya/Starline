@@ -48,12 +48,16 @@ function PageBanner() {
       title: "Privacy Policy",
       desc: "Last updated: December 3, 2025",
     },
+    "/routes": {
+      title: "Todays Routes",
+      desc: "Discover all the destinations we serve. Travel comfortably across the country.",
+    },
   };
 
   const banner = banners[location.pathname];
 
   return (
-  <div className="w-full pt-32 pb-20 flex flex-col justify-center items-center text-center">
+  <div className={`${location.pathname === '/booking' && "hidden"} w-full pt-32 pb-20 flex flex-col justify-center items-center text-center`}>
 
     {/* normal pages */}
     {banner && (
@@ -71,7 +75,7 @@ function PageBanner() {
         <div
           onClick={() => navigate("/cars")}
           className="px-5 py-2 absolute left-7 max-sm:left-2 cursor-pointer top-24 flex items-center gap-2"
-        >
+          >
           <Icon icon="famicons:arrow-back" width="20" height="20" />
           <span className="text-sm">Back</span>
         </div>

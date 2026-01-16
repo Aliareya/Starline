@@ -10,6 +10,7 @@ import Privacy from "../pages/privacy/Privacy";
 import Cars from "../pages/cars/Cars";
 import CarDetails from "../pages/cardetails/CarDetails";
 import AllRoutes from "../pages/allRoutes/AllRoutes";
+import Booking from "../pages/booking/Booking";
 
 function AppRoutes() {
   return (
@@ -21,6 +22,7 @@ function AppRoutes() {
         <Route path="/privacy" element={<Privacy/>} />
         <Route path="/routes" element={<AllRoutes/>} />
         <Route path="/cars" element={<Cars/>} />
+        <Route path="/booking" element={<Booking/>} />
         <Route path="/car/:id" element={<CarDetails/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="/login" element={<Login/>} />
