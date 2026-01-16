@@ -3,9 +3,9 @@ import BookingBanner from '../../components/banner/BookingBanner'
 
 function Booking() {
   return (
-    <div className='w-full px-12'>
+    <div className='w-full  pt-20'>
       <BookingBanner/>
-      bookin
+      <div className='w-full px-12 max-sm:px-3 h-96 bg-slate-100'></div>
     </div>
   )
 }
