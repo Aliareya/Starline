@@ -18,7 +18,7 @@ function BookingBanner() {
         <div className="w-12 h-12 max-sm:w-10 max-sm:h-10 bg-[#056666] flex justify-center items-center rounded-full border-[#dae7e7] border-4">
           1
         </div>
-        <p className="max-sm:text-center text-sm max-sm:text-xs text-gray-400 text-[#056666] font-medium pt-1">
+        <p className="max-sm:text-center text-sm max-sm:text-xs  text-[#056666] font-medium pt-1">
           Select Seats
         </p>
       </div>
@@ -27,7 +27,7 @@ function BookingBanner() {
         <div className="w-12 h-12 max-sm:w-10 max-sm:h-10 bg-[#056666] flex justify-center items-center rounded-full border-[#dae7e7] border-4">
           1
         </div>
-        <p className="text-sm max-sm:text-xs max-sm:text-center md:text-center text-gray-400 text-[#056666] font-medium pt-1">
+        <p className="text-sm max-sm:text-xs max-sm:text-center md:text-center text-gray-400 font-medium pt-1">
           T-Details
         </p>
       </div>
@@ -36,7 +36,7 @@ function BookingBanner() {
         <div className="w-12 h-12 max-sm:w-10 max-sm:h-10 bg-[#056666] flex justify-center items-center rounded-full border-[#dae7e7] border-4">
           1
         </div>
-        <p className="text-sm max-sm:text-xs max-sm:text-center md:text-center text-gray-400 text-[#056666] font-medium pt-1">
+        <p className="text-sm max-sm:text-xs max-sm:text-center md:text-center text-gray-400  font-medium pt-1">
           Select Seats
         </p>
       </div>
@@ -45,7 +45,7 @@ function BookingBanner() {
         <div className="w-12 h-12 max-sm:w-10 max-sm:h-10 bg-[#056666] flex justify-center items-center rounded-full border-[#dae7e7] border-4">
           1
         </div>
-        <p className="text-sm max-sm:text-xs max-sm:text-center md:text-center text-gray-400 text-[#056666] font-medium pt-1">
+        <p className="text-sm max-sm:text-xs max-sm:text-center md:text-center text-gray-400  font-medium pt-1">
           Select Seats
         </p>
       </div>
